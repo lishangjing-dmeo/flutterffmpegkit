@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'ffmpeg_kit_flutter_new'
+  s.name             = 'ffmpeg_kit_flutter_new_full_gpl'
   s.version          = '1.0.0'
   s.summary          = 'FFmpeg Kit for Flutter'
   s.description      = 'A Flutter plugin for running FFmpeg and FFprobe commands.'
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     ss.libraries = 'z', 'bz2', 'c++', 'iconv'
     ss.osx.deployment_target = '10.15' # Adjust as needed for macOS
 
-    Adding pre-install hook for macOS
+    # Adding pre-install hook for macOS
     s.prepare_command = <<-CMD
       if [ ! -d "./Frameworks" ]; then
         chmod +x ./setup_macos.sh
