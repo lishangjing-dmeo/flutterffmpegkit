@@ -36,13 +36,13 @@ Pod::Spec.new do |s|
     ss.libraries = 'z', 'bz2', 'c++', 'iconv'
     ss.osx.deployment_target = '10.15' # Adjust as needed for macOS
 
-    # Adding pre-install hook for macOS
-    # s.prepare_command = <<-CMD
-    #   if [ ! -d "./Frameworks" ]; then
-    #     chmod +x ./setup_macos.sh
-    #     ./setup_macos.sh
-    #   fi
-    # CMD
+    Adding pre-install hook for macOS
+    s.prepare_command = <<-CMD
+      if [ ! -d "./Frameworks" ]; then
+        chmod +x ./setup_macos.sh
+        ./setup_macos.sh
+      fi
+    CMD
   end
 
 end
