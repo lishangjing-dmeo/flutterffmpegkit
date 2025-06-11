@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Download and unzip MacOS framework
-MACOS_URL="https://github.com/sk3llo/ffmpeg_kit_flutter/releases/download/6.0.2/ffmpeg-kit-macos-full-gpl-6.0.zip"
+MACOS_URL="https://github.com/lishangjing-dmeo/flutterffmpegkit/releases/download/1.0.0/ffmpeg-kit-macos-full-gpl-6.0.zip"
 mkdir -p Frameworks
 curl -L $MACOS_URL -o frameworks.zip
 unzip -o frameworks.zip -d Frameworks
