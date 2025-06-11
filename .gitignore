@@ -35,5 +35,3 @@ build/
 
 # FVM Version Cache
 .fvm/
-
-macos/Frameworks
